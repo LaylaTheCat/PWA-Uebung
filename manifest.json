@@ -1,0 +1,20 @@
+
+{
+    "name": "Meine To-do-App",
+    "short_name": "Meine To-dos",
+    "description": "Eine einfache App zum Organisieren deiner Aufgaben.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#f1f5f9",
+    "theme_color": "#17243b",
+    "lang": "de",
+    "icons": [
+        {
+            "src": "./icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        }
+    ]
+}

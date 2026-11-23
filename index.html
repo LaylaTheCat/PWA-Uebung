@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meine To-do-App</title>
+
+    <meta name="theme-color" content="#17243b">
+    <meta name="description" content="Eine einfache To-do-App zum Organisieren deiner Aufgaben.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons.svg" type="image/svg+xml">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <div class="logo">✓</div>
+            <h1>Meine Aufgaben</h1>
+            <p>Organisiere deinen Tag ganz einfach.</p>
+        </header>
+
+        <section class="todo-section">
+
+            <form id="todo-form">
+                <input
+                    type="text"
+                    id="todo-input"
+                    placeholder="Neue Aufgabe eingeben..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit" class="add-button">
+                    +
+                </button>
+            </form>
+
+            <div class="task-heading">
+                <h2>Meine To-dos</h2>
+                <span id="task-count">0 Aufgaben</span>
+            </div>
+
+            <ul id="todo-list">
+                <!-- Aufgaben werden hier eingefügt -->
+            </ul>
+
+            <div id="empty-message">
+                🎉 Noch keine Aufgaben vorhanden!
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Fortschritt</span>
+                    <span id="progress-text">0 %</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Meine To-do-PWA · Einfach organisiert</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
